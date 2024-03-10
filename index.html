@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>SalesReport Application</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('https://www.vucac.com/blog/wp-content/uploads/2023/07/Marketing-3.png');
+      background-size: cover;
+      font-family: 'Arial', sans-serif;
+      color: #fff;
+    }
+
+    .container {
+      width: 50%;
+      margin: 50px auto;
+      background-color: rgba(182, 245, 244, 0.8);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #1e88e5;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      font-weight: bold;
+      color: #1e88e5;
+    }
+
+    input,
+    select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    button {
+      background-color: #d32f2f;
+      color: #fff;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #b71c1c;
+    }
+
+    p {
+      margin-bottom: 5px;
+      color: #333;
+    }
+  
+    @media (max-width: 600px) {
+      .container {
+        width: 80%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Sales Report Application</h1>
+    <form action="/" method="POST" >
+      <div class="form-group">
+        <label for="Date">Date of Sale:</label>
+        <input type="date" id="Date" name="Date" required>
+      </div>
+      <div class="form-group">
+        <label for="Time">Time:</label>
+        <input type="time" id="Time" name="Time" required>
+      </div>
+      <div class="form-group">
+        <label for="product_id">Product_id:</label>
+        <input type="text" id="product_id" name="product_id" required>
+      </div>
+      <div class="form-group">
+        <label for="product_name">Product:</label>
+        <input type="text" id="product_name" name="product_name" required>
+      </div>
+      <div class="form-group">
+        <label for="category">category:</label>
+        <input type="text" id="category" name="category" required>
+      </div>
+      <div class="form-group">
+        <label for="quantitysold">Quantity Sold:</label>
+        <input type="int" id="quantitysold" name="quantitysold" required>
+      </div>
+      <div class="form-group">
+        <label for="unitprice">unitprice:</label>
+        <input type="float" id="unitprice" name="unitprice" required>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+</body>
+
+</html>
