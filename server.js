@@ -417,7 +417,7 @@ app.get('/sales', async (req, res) => {
         .container {
           width: 50%;
           margin: 50px auto;
-          background-color: rgba(182, 245, 244, 0.8);
+          background-color: rgba(213, 233, 241, 0.8);
           padding: 20px;
           border-radius: 10px;
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -431,12 +431,14 @@ app.get('/sales', async (req, res) => {
           width: 100%;
           border-collapse: collapse;
           margin-top: 20px;
+          border: 1px solid black;
         }
     
         th, td {
           border: 1px solid #ddd;
           padding: 10px;
           text-align: left;
+          border: 0.5px solid black;
         }
     
         th {
@@ -481,7 +483,7 @@ app.get('/sales', async (req, res) => {
   }
 });
 
-const PORT = 3000;
+const PORT = 4000;
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
 });
