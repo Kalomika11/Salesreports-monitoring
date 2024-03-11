@@ -85,7 +85,7 @@ app.get('/sales', async (req, res) => {
         .container {
           width: 50%;
           margin: 50px auto;
-          background-color: rgba(213, 233, 241, 0.8);
+          background-color: rgba(189, 198, 249, 0.8);
           padding: 20px;
           border-radius: 10px;
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
